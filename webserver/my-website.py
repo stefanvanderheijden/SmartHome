@@ -21,8 +21,6 @@ def action(pin, action):
    humidity = ''
 
    if pin == "dhtpin" and action == "get":
-      humi, temp = dht.read_retry(dht.DHT22, DHT22_pin)  # Reading humidity and temperature
-
       h1, t1 = dht.read_retry(dht.DHT22, 4)
       h2, t2 = dht.read_retry(dht.DHT22, 5)
       h3, t3 = dht.read_retry(dht.DHT22, 26)
@@ -36,8 +34,8 @@ def action(pin, action):
       h3 = round(h3, 2)
       t3 = round(t3 ,2)
 
-      temperature = 'Temperature: ' + temp 
-      humidity =  'Humidity: ' + humi
+      temperature = 'Temperature: ' + t1 
+      humidity =  'Humidity: ' + h1
 
    templateData = {
    't1' : temperature,
