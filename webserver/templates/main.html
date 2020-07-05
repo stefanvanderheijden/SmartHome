@@ -10,21 +10,35 @@
 
 <body style="background: rgb(205, 230, 241)218, 218, 218)">
    
-   <div class="container-fluid">
+   <div class="container">
    <h1>Raspberry Pi Webserver</h1>
-   <p ><button><a href="/dhtpin/get" > Get Temperature </a></button></p>
+   <p><button type="button" class="btn btn-default"><a href="/dhtpin/get" > Get Temperature </a></button></p>
    
-   <h3> Buitenlucht</h3>
-   <h4> {{ t1 }} </h4>
-   <h4> {{ h1 }} </h4>
 
-   <h3> Woonkamer</h3>
-   <h4> {{ t2 }} </h4>
-   <h4> {{ h2 }} </h4>
-
-   <h3> Kantoor</h3>
-   <h4> {{ t3 }} </h4>
-   <h4> {{ h3 }} </h4>
+   <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">Buitenlucht</div>
+        <div class="panel-body">
+         <h4> {{ t1 }} </h4>
+         <h4> {{ h1 }} </h4>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Woonkamer</div>
+        <div class="panel-body">
+         <h4> {{ t2 }} </h4>
+         <h4> {{ h2 }} </h4>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Kantoor</div>
+        <div class="panel-body">
+         <h4> {{ t3 }} </h4>
+         <h4> {{ h3 }} </h4>
+        </div>
+      </div>
+    </div>
+    
 </div>
 </body>
 </html>
