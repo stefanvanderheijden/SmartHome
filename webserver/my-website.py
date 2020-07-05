@@ -34,14 +34,14 @@ def action(pin, action):
       h3 = round(h3, 2)
       t3 = round(t3 ,2)
 
-      temperature1 = 'Temperature: ' + str(t1) 
-      humidity1 =  'Humidity: ' + str(h1)
+      temperature1 = 'Temperatuur: ' + str(t1)  + '°C'
+      humidity1 =  'Luchtvochtigheid: ' + str(h1) + '%'
 
-      temperature2 = 'Temperature: ' + str(t2) 
-      humidity2 =  'Humidity: ' + str(h2)
+      temperature2 = 'Temperatuur: ' + str(t2) + '°C'
+      humidity2 =  'Luchtvochtigheid: ' + str(h2) + '%'
 
-      temperature3 = 'Temperature: ' + str(t3) 
-      humidity3 =  'Humidity: ' + str(h3)
+      temperature3 = 'Temperatuur: ' + str(t3) + '°C'
+      humidity3 =  'Luchtvochtigheid: ' + str(h3) + '%'
 
    templateData = {
    't1' : temperature1,
