@@ -1,13 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <head>
-   <title>Webserver</title>
-   <link rel="stylesheet" media="screen" href ="static/bootstrap.min.css">
-   <link rel="stylesheet" href="static/bootstrap-theme.min.css">
-   <meta name="viewport" content = "width=device-width, initial-scale=1.0">
- 
+   <title>Bootstrap Example</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body style="background: rgb(205, 230, 241)218, 218, 218)">
+   
+   <div class="container-fluid">
    <h1>Raspberry Pi Webserver</h1>
    <p ><button><a href="/dhtpin/get" > Get Temperature </a></button></p>
    
@@ -22,6 +25,6 @@
    <h3> Kantoor</h3>
    <h4> {{ t3 }} </h4>
    <h4> {{ h3 }} </h4>
-   
+</div>
 </body>
 </html>
