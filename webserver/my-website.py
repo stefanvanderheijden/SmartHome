@@ -34,12 +34,12 @@ def action(pin, action):
       h3 = round(h3, 2)
       t3 = round(t3 ,2)
 
-      temperature = 'Temperature: ' + t1 
-      humidity =  'Humidity: ' + h1
+      temperature1 = 'Temperature: ' + str(t1) 
+      humidity1 =  'Humidity: ' + str(h1)
 
    templateData = {
-   't1' : temperature,
-   'h1' : humidity
+   't1' : temperature1,
+   'h1' : humidity1
    }
 
    return render_template('main.html', **templateData)
