@@ -37,9 +37,19 @@ def action(pin, action):
       temperature1 = 'Temperature: ' + str(t1) 
       humidity1 =  'Humidity: ' + str(h1)
 
+      temperature2 = 'Temperature: ' + str(t2) 
+      humidity2 =  'Humidity: ' + str(h2)
+
+      temperature3 = 'Temperature: ' + str(t3) 
+      humidity3 =  'Humidity: ' + str(h3)
+
    templateData = {
    't1' : temperature1,
-   'h1' : humidity1
+   'h1' : humidity1,
+   't2' : temperature2,
+   'h2' : humidity2,
+   't3' : temperature3,
+   'h3' : humidity3
    }
 
    return render_template('main.html', **templateData)
