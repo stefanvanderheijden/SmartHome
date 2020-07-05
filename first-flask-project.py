@@ -1,5 +1,5 @@
 # Importing the flask module
-from flask import Flask
+from flask import Flask, render_template
 import Adafruit_DHT
 
 # Create a flask object named app
