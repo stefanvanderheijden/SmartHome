@@ -23,9 +23,9 @@ def action(pin, action):
    if pin == "dhtpin" and action == "get":
       humi, temp = dht.read_retry(dht.DHT22, DHT22_pin)  # Reading humidity and temperature
 
-      h1, t1 = Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, 4)
-      h2, t2 = Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, 5)
-      h3, t3 = Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, 26)
+      h1, t1 = dht.read_retry(dht.DHT22, 4)
+      h2, t2 = dht.read_retry(dht.DHT22, 5)
+      h3, t3 = dht.read_retry(dht.DHT22, 26)
 
       h1 = round(h1, 2)
       t1 = round(t1, 2)
