@@ -2,6 +2,8 @@ from flask import Flask, render_template
 import RPi.GPIO as GPIO
 import Adafruit_DHT as dht
 
+import subprocess
+
 import os
 import time 
 from time import sleep
