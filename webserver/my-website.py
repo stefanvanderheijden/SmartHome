@@ -64,10 +64,12 @@ def action(pin, action):
 
    return render_template('main.html', **templateData)
 
+print("running logging script")
+subprocess.call(["python","/home/pi/Documents/Script/webserver/logger.py"])
+
 if __name__ == "__main__":
    print("starting flask server")
    app.run(host='0.0.0.0', port=80, debug=True)
-   print("running logging script")
-   subprocess.call(["python","/home/pi/Documents/Script/webserver/logger.py"])
+
 
    
