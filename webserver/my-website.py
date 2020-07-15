@@ -66,8 +66,7 @@ def action(pin, action):
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=80, debug=True)
-
-while True:
+   while True:
         now = datetime.now()
         h1, t1 = dht.read_retry(dht.DHT22, 4)
         h2, t2 = dht.read_retry(dht.DHT22, 5)
