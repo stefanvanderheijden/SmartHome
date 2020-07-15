@@ -27,6 +27,7 @@ def main():
 # The function below is executed when someone requests a URL with the pin number and action in it:
 @app.route("/<pin>/<action>")
 def action(pin, action):
+   print("A temperature request from the website")
    temperature = ''
    humidity = ''
 
@@ -67,7 +68,8 @@ def action(pin, action):
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=80, debug=True)
    while True:
-        now = datetime.now()
+        
+        
         h1, t1 = dht.read_retry(dht.DHT22, 4)
         h2, t2 = dht.read_retry(dht.DHT22, 5)
         h3, t3 = dht.read_retry(dht.DHT22, 26)
@@ -81,6 +83,9 @@ if __name__ == "__main__":
         h3 = round(h3, 2)
         t3 = round(t3 ,2)
 
+        now = datetime.now()
         file.write(str(now)+","+str(t1)+","+str(h1)+","+str(t2)+","+str(h2)+","+str(t3)+","+str(h3)+"\n")
+        print("I have logged the temperature to a CSV file")
         file.flush()
-        time.sleep(5)<br>file.close()
+        file.close()
+        time.sleep(5)
