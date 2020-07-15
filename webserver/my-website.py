@@ -66,7 +66,7 @@ def action(pin, action):
 
 if __name__ == "__main__":
    print("running logging script")
-	subprocess.call(["python","/home/pi/Documents/Script/webserver/logger.py"])
+   subprocess.call(["python","/home/pi/Documents/Script/webserver/logger.py"])
    print("starting flask server")
    app.run(host='0.0.0.0', port=80, debug=True)
    
