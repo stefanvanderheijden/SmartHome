@@ -7,7 +7,7 @@ import time
 from time import sleep
 from datetime import datetime
 
-file = open("/home/pi/data_log.csv", "a")
+file = open("/home/pi/Documents/Script/Data/data_log.csv", "a")
 
 if os.stat("/home/pi/data_log.csv").st_size == 0:
         file.write("Tijd,BuitenTemp,BuitenLuchtV,HuiskamerTemp,HuiskamerLuchtV,KantoorTemp,KantoorLuchtV\n")
