@@ -86,7 +86,8 @@ while True:
    print("I have logged the temperature to a CSV file")
    file.flush()
    
-   time.sleep(5)<br>file.close()
+   time.sleep(5)
+   file.close()
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=80, debug=True)
