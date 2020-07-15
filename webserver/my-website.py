@@ -65,7 +65,7 @@ def action(pin, action):
    return render_template('main.html', **templateData)
 
 print("running logging script")
-subprocess.call(["python","/home/pi/Documents/Script/webserver/logger.py"])
+os.system("sudo python /home/pi/Documents/Script/webserver/logger.py")
 
 if __name__ == "__main__":
    print("starting flask server")
