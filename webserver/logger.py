@@ -35,4 +35,5 @@ while True:
     file.write(str(now)+","+str(t1)+","+str(h1)+","+str(t2)+","+str(h2)+","+str(t3)+","+str(h3)+"\n")
     print("I have logged the temperature to a CSV file")
     file.flush()
-    time.sleep(5)<br>file.close()
+    time.sleep(5)
+    file.close()
