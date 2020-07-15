@@ -64,7 +64,11 @@ def action(pin, action):
 
 if __name__ == "__main__":
    print("running logging script")
-   os.system("logger.py 1")
+   try:
+	   subprocess.call(["python","/home/pi/Documents/Script/webserver/logger.py"])
+	   raise SystemExit()
+   except KeyboardInterrupt:
+	   print "Quit"
    print("starting flask server")
    app.run(host='0.0.0.0', port=80, debug=True)
    
